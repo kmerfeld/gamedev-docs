@@ -1,0 +1,35 @@
+<html>
+<head><title>Minigame scenario</title></head>
+<body>
+
+<h1>Minigame scenario</h1>
+<hr><i>the minigame</i><hr>
+
+
+<h2>Players view</h2>
+<p> The minigame is the boss fights, at the end of each level the minigame will start. This means there will be four instances of the minigame, as there are four levels.
+
+<p>A player appears in the screen with a bunch of balloons spawning through the screen. 
+The score is at 0 and time is at a minute. When the game starts, the player starts shooting the balloons.
+Each time the player hits a balloon, his score raises. Then the player wins when the score goal is reached. If they do not get enough points in the time period, they have to restart.
+After the win condition is met, the victory screen is displayed. If he runs out of time he loses. The game end screen is displayed. 
+</p>
+
+<h2>Game Dev's view</h2>
+
+<img src = "mini-game-diagram.jpg" height="400" width="600">
+
+<p>When the Minigame is started by the main game, It will open a new scene that will initialize and draw the player and the balloons.
+The player will be able to shoot the balloons with his weapon, every time he shoots, a bullet object will spawn. When the bullet hits aballoon, the bullet will check to see if it hits something, and when it does it will send a "pop" command to the balloon. 
+When the balloon pops, it will destroy itself and up the score.
+</p>
+
+  [<a href="index.html">go back to index</a>]
+</p>
+
+<hr><i>Owner: Kyle Merfeld </i>
+<hr><i>Contributer who did equal work: Sneha Mecheri Subash </i>
+<!-COMMENT--/>
+
+</body>
+</html>

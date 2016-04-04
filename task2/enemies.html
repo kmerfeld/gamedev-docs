@@ -1,0 +1,103 @@
+
+<html>
+<head><title>Encountering Enemies</title></head>
+<body>
+
+<h1>Encountering Enemies</h1>
+<hr><i>This diagram helps explain the game implemetnter's view and also giving the core view of the above scenario in the game</i><hr>
+
+<img src = "DIAG 2.png">
+<pre>
+
+The diagram has a player class with three functions namely - system, update, and supply location,
+which function in a continous loop. From system to update and then system again.
+Similarly enemy contains the same functions as player and processes the
+same loop as the player class.
+Detection to event - acknowledges the whereabouts of the player to the enemy.
+  
+</pre>
+
+<h1>DECEPTION- Falling into a Trap.</h1>
+<hr><i>Diagram shows interaction between Player and Deception</i><hr>
+<pre>
+<img src = "image1.jpg" height="422" width="822">
+
+Explanation:-
+
+NOTE: Till further updated, System is meanwhile also handling the location and inputs from the actual player
+      along with collison detection.
+
+Functions :- System, Deception, Player, Lives, End Game, Scores.
+
+- System:- Confirms the collision detection from the UNITY ENGINE. Henceforth, reports
+           to Deception.
+- Deception:- On receiving confirmation from System that collison(Confirmation that player has fallen into trap) has taken place, it
+               calls the player.
+- Player:- On recieving confirmation from Deception:
+                    - Updates the no. of lives.
+                    - Updates the no. of scores.
+- Lives:- Once the lives reach to a minimum, it calls End Game, which henceforth changes the screen.
+
+
+</pre>
+
+<h1>Roaming Enemy</h1>
+<hr><i>Diagram shows interaction between Player and Roaming Enemy</i><hr>
+<pre>
+<img src = "image2.jpg" height="422" width="822">
+
+Explanation:-
+
+Functions :- System, Roaming Enemy, Player, Lives, End Game, Scores, increase in speed.
+
+- System:- Confirms the collision detection from the UNITY ENGINE. Henceforth, reports
+           to Roaming Enemy.
+- Roaming Enemy:- On receiving confirmation from System that collison(Confirmation that player has interacted with the player) has taken place, it
+               calls the player but this happens in two different scenarios:
+                       - If the collision detection is reported of interaction between the player's attack on the enemy then the
+                          enemy calls the player to confirm the "kill" scenario.
+                       - If the collision detection is reported of the approaching distance of player near the enemy, enemy then calls
+                         the player to confirm the attack scenario(when enemy attaks the player) and also calls "increase in speed" function(To increase the speed 
+                         near the player).
+- Player:- On recieving confirmation from Roaming Enemy:
+                    - On recieving the kill scenario confirmation:
+                             - Updates the no. of lives.
+                             - Updates the no. of scores.
+                    - On receiving the attack scenario confirmation:
+                             - Updates the no. of lives.
+                             - Updates the no. of scores.
+- Lives:- Once the lives reach to a minimum, it calls End Game, which henceforth changes the screen.
+  
+</pre>
+
+<h1>Player's view</h1>
+<hr><i>This is how the player will view encountering enemies</i><hr>
+<pre>
+HERE WE FOCUS ON COLLISON DETECTION AND ITS EFFECTS AFTERMATH:
+
+When the player approaches towards the enemy in the zone, the detection traingle around the 
+enemy gets activated and enemy begans to move to and fro at a faster rate. 
+So when the player touches the enemy it gets killed and a life is reduced at the top corner of the screen.
+  
+</pre>
+
+<p>
+  [<a href="index.htm">go back to index</a>]
+</p>
+
+<hr><i>Names of page owner: </i>
+Niharika Singh
+
+
+
+<!-COMMENT--/>
+
+<hr><i>Names of equal page contributor: </i>
+Ravindra P Singh
+
+
+<!-COMMENT--/>
+
+
+</body>
+</html>

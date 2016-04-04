@@ -1,0 +1,21 @@
+Start screen: good explanation
+
+Map: not completly clear. 
+No clear division of player and developer perspective.
+What all levels the game has?
+
+Player scenario: all scenarios are included in one.
+Could have given detail explanation.
+Some terms are not clear(for example: which checkpoint)
+
+View of Player vs Enemy Scenario, Encountering Enemies: 
+not clearly explained. (for example, light object)
+
+Minigame: diagram is good. Content not complete.
+where this minigame starts in the game?
+
+End: diagrams would have been better to explain.
+
+Overall,I did not understand the flow of your game.
+Scenarios are vague and flow is random throutout the game.
+What all levels this game contains? 
